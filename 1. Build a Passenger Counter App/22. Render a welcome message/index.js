@@ -1,4 +1,8 @@
-// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+let welcomeEl = document.getElementById("welcome-el");
+let namee = " Hououin";
+let greeting = "Hello, old friend";
+
+welcomeEl.innerText = greeting + namee
 
 // Create two variables (name & greeting) that contains your name
 // and the greeting we want to render on the page

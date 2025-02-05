@@ -1,4 +1,6 @@
-let username = 'per"
+let username = 'per'
 
-console.log(username)
+function main(){
+    alert(username)
+}
 
