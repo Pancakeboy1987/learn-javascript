@@ -3,3 +3,10 @@
 // Log out at least two of the keys using the dot notation
 
 
+let castle = {
+    owned: true,
+    places: 4,
+    price:199,
+    floors: [1,2,3],
+    name: "castlerock"
+}
