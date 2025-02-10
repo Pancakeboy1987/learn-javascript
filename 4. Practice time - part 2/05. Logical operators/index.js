@@ -5,4 +5,12 @@ let weekday = "Friday"
 // Use the logical "AND operator" -> &&
 
 
+function fr(){
+    if ((dayOfMonth===13)&&(weekday=="Friday")){
+        return "omg"
+    }else{
+        return "meh"
+    }
+}
 
+console.log(fr())
