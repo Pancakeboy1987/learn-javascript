@@ -1,6 +1,5 @@
-function saveLead() {
-    console.log("Button clicked!")
-}
+let elementInput = document.getElementById("input-btn");
 
-
-
+elementInput.addEventListener("click", function () {
+  console.log("Button clicked differently!");
+});
