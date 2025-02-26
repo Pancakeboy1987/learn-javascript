@@ -1,19 +1,28 @@
 // SETTING THE STAGE
-let player = "Per"
-let opponent = "Nick"
-let game = "AmazingFighter"
-const points = 0
-const hasWon = false
+const player = "Per";
+const opponent = "Nick";
+const game = "AmazingFighter";
+let points = 0;
+let hasWon = true;
+let button_1 = document.getElementById("btn-1");
+let button_2 = document.getElementById("btn-2");
+let button_3 = document.getElementById("btn-3");
 
-// PLAYING THE GAME
-points += 100
-hasWon = true
+button_1.addEventListener("click", function () {
+  hasWon = true;
+});
+
+button_2.addEventListener("click", function () {
+  hasWon = false;
+});
 
 // ANNOUNCING THE WINNER
-if (hasWon) {
-    console.log(player + " got " + points + " points and won the " + game + " game!")
-} else {
-    console.log("The winner is " + opponent + "! " + player + " lost the game")
+function render() {
+  if (hasWon === true) {
+    console.log(`${player} got ${points} points and won the ${game} game!`);
+  } else {
+    console.log(`The winner is  ${opponent} ! ${player} lost the game`);
+  }
 }
 
 // Go through all variables and decide if they should be let or const

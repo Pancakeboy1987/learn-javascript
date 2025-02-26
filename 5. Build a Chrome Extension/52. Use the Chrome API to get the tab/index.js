@@ -19,6 +19,7 @@ const tabs = [
 tabBtn.addEventListener("click", function(){
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         console.log(tabs)
+        
         // since only one tab should be active and in the current window at once
         // the return variable should only have one entry
         let activeTab = tabs[0]
